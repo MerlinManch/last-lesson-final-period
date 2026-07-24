@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="Last Lesson – Final Period: ein originales 2D-Pixelart-Schulabenteuer als Browsergame.">
+  <title>Last Lesson – Final Period</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app" class="app-shell">
+    <div id="rotateNotice" class="rotate-notice" aria-live="polite">Bitte Gerät ins Querformat drehen.</div>
+    <header id="topbar" class="topbar hidden" aria-label="Spielstatus">
+      <button id="profileButton" class="profile-chip" aria-label="Profil öffnen"><span id="profileAvatar">🙂</span><span id="profileName">Spieler</span></button>
+      <div class="currency"><span aria-hidden="true">📚</span><strong id="booksValue">0</strong></div>
+      <div class="currency"><span aria-hidden="true">●</span><strong id="gumValue">0</strong></div>
+      <button id="dailyButton" class="icon-button" title="Tägliche Belohnung" aria-label="Tägliche Belohnung">🎁</button>
+      <span id="onlineStatus" class="status offline">Offline-Mock</span>
+    </header>
+
+    <main id="screen" class="screen" aria-live="polite"></main>
+
+    <section id="gameLayer" class="game-layer hidden" aria-label="Spielbereich">
+      <canvas id="gameCanvas" width="960" height="540" aria-label="Last Lesson Spielfeld"></canvas>
+      <div id="hud" class="hud">
+        <div id="heartHud" class="hearts" aria-label="Herzen"></div>
+        <div class="collectible-hud"><span>📚 <b id="runBooks">0</b></span><span>● <b id="runGum">0</b></span><span>✎ <b id="runDoodles">0</b>/3</span></div>
+        <div id="bossHud" class="boss-hud hidden"><span id="bossName">Boss</span><div class="bar"><i id="bossBar"></i></div></div>
+        <button id="pauseButton" class="pause-button" aria-label="Pause">Ⅱ</button>
+      </div>
+      <div id="toast" class="toast hidden"></div>
+      <div id="touchControls" class="touch-controls">
+        <div class="touch-left">
+          <button data-action="left" class="touch-button wide" aria-label="Links">◀</button>
+          <button data-action="right" class="touch-button wide" aria-label="Rechts">▶</button>
+          <button data-action="down" class="touch-button small" aria-label="Ducken">▼</button>
+        </div>
+        <div class="touch-right">
+          <button data-action="attack" class="touch-button attack" aria-label="Angriff">✦</button>
+          <button data-action="jump" class="touch-button jump" aria-label="Sprung">↑</button>
+          <button data-action="sprint" class="touch-button sprint ability-control" aria-label="Sprint">»</button>
+          <button data-action="dash" class="touch-button dash ability-control" aria-label="Dash">➜</button>
+          <button data-action="interact" class="touch-button interact" aria-label="Interaktion">E</button>
+        </div>
+      </div>
+    </section>
+
+    <div id="modalRoot" class="modal-root hidden" role="dialog" aria-modal="true"></div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/logic.js"></script>
+  <script src="js/save.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/game.js"></script>
+  <script>
+    if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+      navigator.serviceWorker.register('./service-worker.js').catch(() => {});
+    }
+  </script>
+</body>
+</html>
