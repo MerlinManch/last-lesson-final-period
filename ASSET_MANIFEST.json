@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "generatedBy": "generate_web_assets.py",
+  "assets": [
+    {
+      "id": "assets_app-icon-192_png",
+      "category": "art",
+      "path": "assets/app-icon-192.png",
+      "type": "png",
+      "sha256": "ff86dd1eaf057a498d48f5da030278f8539260e964a5a2555d6934197ab156ca",
+      "status": "generated",
+      "width": 192,
+      "height": 192,
+      "intendedUsage": "PWA/Marketing/QA"
+    },
+    {
+      "id": "assets_app-icon-512_png",
+      "category": "art",
+      "path": "assets/app-icon-512.png",
+      "type": "png",
+      "sha256": "f6c934ac3e46231bf9513d37e194111259bb5dca527e9ced8504de895c54195f",
+      "status": "generated",
+      "width": 512,
+      "height": 512,
+      "intendedUsage": "PWA/Marketing/QA"
+    },
+    {
+      "id": "assets_key-art-1280x720_png",
+      "category": "art",
+      "path": "assets/key-art-1280x720.png",
+      "type": "png",
+      "sha256": "6ecdc84ecfc71aafb4cd88212020d3f8d472f4a62be50a9ec31a6bd360668511",
+      "status": "generated",
+      "width": 1280,
+      "height": 720,
+      "intendedUsage": "PWA/Marketing/QA"
+    },
+    {
+      "id": "assets_screenshot_gameplay_png",
+      "category": "art",
+      "path": "assets/screenshot_gameplay.png",
+      "type": "png",
+      "sha256": "1ad540c3cbeb82428f50a3050d2b2d413e9160eef8d51e19270ddafc497e101d",
+      "status": "generated",
+      "width": 1440,
+      "height": 900,
+      "intendedUsage": "PWA/Marketing/QA"
+    },
+    {
+      "id": "assets_screenshot_main_png",
+      "category": "art",
+      "path": "assets/screenshot_main.png",
+      "type": "png",
+      "sha256": "6315c1f2da6a3d1eb226e58320fd288850b453deb4c9d77476a441c11d8e70ec",
+      "status": "generated",
+      "width": 1440,
+      "height": 900,
+      "intendedUsage": "PWA/Marketing/QA"
+    },
+    {
+      "id": "index_html",
+      "category": "runtime",
+      "path": "index.html",
+      "type": "html",
+      "sha256": "8ed1db82ae677e8e150ad48facd3a705223722f549398d52b63fcace6ad7d4b0",
+      "status": "generated"
+    },
+    {
+      "id": "js_audio_js",
+      "category": "runtime",
+      "path": "js/audio.js",
+      "type": "js",
+      "sha256": "d9ba289666487e7a6310a826e5806493fe576dc894f2cc06fe2cc660e1db2a22",
+      "status": "generated"
+    },
+    {
+      "id": "js_data_js",
+      "category": "runtime",
+      "path": "js/data.js",
+      "type": "js",
+      "sha256": "a5954aa384ba652b2401de14fdc2440498f707dd7f3ead8fd7f0b3f3f9b3ab8b",
+      "status": "generated"
+    },
+    {
+      "id": "js_game_js",
+      "category": "runtime",
+      "path": "js/game.js",
+      "type": "js",
+      "sha256": "5d1389fd9cf9ed6f1aba76aaa6c605f7615ec2f61ac957af8fe1b81f6572c948",
+      "status": "generated"
+    },
+    {
+      "id": "js_logic_js",
+      "category": "runtime",
+      "path": "js/logic.js",
+      "type": "js",
+      "sha256": "10efc09e3d8f3b23a44ec84fe8068c239058bd97dcbb47d4e088e1c82ec38e34",
+      "status": "generated"
+    },
+    {
+      "id": "js_save_js",
+      "category": "runtime",
+      "path": "js/save.js",
+      "type": "js",
+      "sha256": "bf7a815e34eba5e9b86c74f40f5c00c6cec5e5b4d2e75b38b81523f324121ffc",
+      "status": "generated"
+    },
+    {
+      "id": "js_services_js",
+      "category": "runtime",
+      "path": "js/services.js",
+      "type": "js",
+      "sha256": "cea2e9c98cafcec9d865622fe41357f65fa2d5984fbc4229105a3e7860d602f6",
+      "status": "generated"
+    },
+    {
+      "id": "manifest_webmanifest",
+      "category": "runtime",
+      "path": "manifest.webmanifest",
+      "type": "webmanifest",
+      "sha256": "c6f0292bae844da0433e5c17e15b1745093f35a904c8b240a142dfd3350f69dd",
+      "status": "generated"
+    },
+    {
+      "id": "service-worker_js",
+      "category": "runtime",
+      "path": "service-worker.js",
+      "type": "js",
+      "sha256": "469d2f794add217cb99dfe8bfdc6bb076e89a80a1cef6572982cd59c0c06da48",
+      "status": "generated"
+    },
+    {
+      "id": "styles_css",
+      "category": "runtime",
+      "path": "styles.css",
+      "type": "css",
+      "sha256": "0047798fe603a3661af1e2c650d3edc32118dfcf2a3670ab45667909c5ffda81",
+      "status": "generated"
+    },
+    {
+      "id": "tests_content_test_js",
+      "category": "runtime",
+      "path": "tests/content.test.js",
+      "type": "js",
+      "sha256": "5fb3e4a7fc9dcf07c8f55c4eabd18908b3bee2184057474a9c83308dc02c8ed0",
+      "status": "generated"
+    },
+    {
+      "id": "tests_logic_test_js",
+      "category": "runtime",
+      "path": "tests/logic.test.js",
+      "type": "js",
+      "sha256": "4b4c9cebf4cc49714a1fc53cf1fdf721c3f0ed8773b996ff3114221cbad86907",
+      "status": "generated"
+    }
+  ]
+}

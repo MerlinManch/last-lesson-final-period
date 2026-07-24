@@ -1,0 +1,12 @@
+'use strict';
+const assert=require('assert'),fs=require('fs'),vm=require('vm'),path=require('path');
+const context={globalThis:{}};context.window=context.globalThis;vm.createContext(context);vm.runInContext(fs.readFileSync(path.join(__dirname,'../js/data.js'),'utf8'),context);
+const D=context.globalThis.LastLessonData;let passed=0;const test=(name,fn)=>{fn();passed++;console.log('✓',name);};
+test('8 Kapitel vorhanden',()=>assert.equal(D.chapters.length,8));
+test('32 Story-Level vorhanden',()=>assert.equal(D.chapters.reduce((n,c)=>n+c.levels.length,0),32));
+test('8 Waffen vorhanden',()=>assert.equal(D.weapons.length,8));
+test('Mindestens 50 Erfolge vorhanden',()=>assert.ok(D.achievements.length>=50));
+test('Lootwahrscheinlichkeiten ergeben 100 Prozent',()=>assert.equal(D.lootRarities.reduce((s,r)=>s+r.chance,0),100));
+test('8 Wochenpläne mit je 7 Tagen',()=>assert.ok(D.dailyWeeks.length===8&&D.dailyWeeks.every(w=>w.length===7)));
+test('Alle statischen Webdateien existieren',()=>['index.html','styles.css','js/game.js','service-worker.js','manifest.webmanifest'].forEach(f=>assert.ok(fs.existsSync(path.join(__dirname,'..',f)))));
+console.log(`\n${passed} Inhaltstests bestanden.`);

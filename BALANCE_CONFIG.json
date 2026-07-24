@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "player": {
+    "walkSpeed": 185,
+    "sprintSpeed": 280,
+    "jumpVelocity": 455,
+    "gravity": 1120,
+    "coyoteTimeSeconds": 0.11,
+    "jumpBufferSeconds": 0.13,
+    "baseHearts": 3,
+    "baseInvulnerabilitySeconds": 1.2
+  },
+  "weapons": {
+    "rangeUpgradeCosts": [0, 8000, 18000, 35000, 60000]
+  },
+  "economy": {
+    "hospitalGumCost": 20,
+    "duplicateBooks": {"old": 300, "rare": 1000, "epic": 3500, "legendary": 10000}
+  },
+  "loot": {
+    "advertisingBagChances": {"old": 55, "normal": 30, "rare": 11, "epic": 3.5, "legendary": 0.5},
+    "epicPity": 30,
+    "legendaryPity": 100,
+    "dailyAdvertisingBagLimit": 3
+  },
+  "endless": {
+    "baseCameraSpeed": 120,
+    "maximumCameraSpeed": 310,
+    "speedIncreasePerSecond": 1.2,
+    "hearts": 1
+  }
+}

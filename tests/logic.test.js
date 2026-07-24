@@ -1,0 +1,14 @@
+'use strict';
+const assert=require('assert');
+const L=require('../js/logic.js');
+let passed=0;const test=(name,fn)=>{fn();passed++;console.log('✓',name);};
+test('clamp begrenzt Werte',()=>assert.equal(L.clamp(12,0,10),10));
+test('Hash ist deterministisch',()=>assert.equal(L.hashString('Final Period'),L.hashString('Final Period')));
+test('Bestnote wird korrekt gewählt',()=>assert.equal(L.betterGrade('2','1-'),'1-'));
+test('Knappes Level ergibt mindestens bewertbare Note',()=>assert.ok(['1+','1','1-','2+','2','2-','3+','3','3-','4+','4','4-','5','6'].includes(L.gradeLevel({time:500,targetTime:180,deaths:3,heartsLost:8,doodles:0,gum:0,maxGum:5,books:20,targetBooks:500,hospitalUses:1,pickupUses:0}))));
+test('Pity garantiert episch nach 30 Öffnungen',()=>assert.ok(['epic','legendary'].includes(L.rollLoot([{id:'old',chance:99},{id:'epic',chance:.9},{id:'legendary',chance:.1}],{epic:29,legendary:29},()=>.99).id)));
+test('Pity garantiert legendär nach 100 Öffnungen',()=>assert.equal(L.rollLoot([{id:'old',chance:99.5},{id:'legendary',chance:.5}],{epic:5,legendary:99},()=>0).id,'legendary'));
+test('Negative Käufe werden verhindert',()=>assert.equal(L.canPurchase({books:5},'books',10),false));
+test('Endlos-Score steigt mit Distanz',()=>assert.ok(L.scoreEndless({distance:100,time:10})>L.scoreEndless({distance:50,time:10})));
+test('Level enthält Checkpoint, Ziel und drei Kritzeleien',()=>{const lv=L.createLevel(0,0);assert.ok(lv.checkpointX>0&&lv.goalX>lv.checkpointX);assert.equal(lv.collectibles.filter(c=>c.kind==='doodle').length,3);});
+console.log(`\n${passed} Logiktests bestanden.`);

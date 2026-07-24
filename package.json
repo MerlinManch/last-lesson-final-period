@@ -1,0 +1,11 @@
+{
+  "name": "last-lesson-final-period-web",
+  "version": "0.9.0",
+  "private": true,
+  "description": "Browserfähige HTML/CSS/JS-Adaption von Last Lesson – Final Period",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "test": "node tests/logic.test.js && node tests/content.test.js",
+    "validate": "node --check js/data.js && node --check js/logic.js && node --check js/save.js && node --check js/audio.js && node --check js/services.js && node --check js/game.js && npm test"
+  }
+}

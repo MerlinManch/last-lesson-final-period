@@ -1,0 +1,229 @@
+{
+  "version": 1,
+  "levels": [
+    {
+      "id": "1-1",
+      "chapter": 1,
+      "title": "Zu spät!",
+      "status": "playable-generated"
+    },
+    {
+      "id": "1-2",
+      "chapter": 1,
+      "title": "Der Bus des Grauens",
+      "status": "playable-generated"
+    },
+    {
+      "id": "1-3",
+      "chapter": 1,
+      "title": "Unterricht auf dem Handy",
+      "status": "playable-generated"
+    },
+    {
+      "id": "1-4",
+      "chapter": 1,
+      "title": "Pausenhof-Panik",
+      "status": "playable-generated"
+    },
+    {
+      "id": "2-1",
+      "chapter": 2,
+      "title": "Schuleingang",
+      "status": "playable-generated"
+    },
+    {
+      "id": "2-2",
+      "chapter": 2,
+      "title": "Der Vertretungsplan",
+      "status": "playable-generated"
+    },
+    {
+      "id": "2-3",
+      "chapter": 2,
+      "title": "Das endlose Treppenhaus",
+      "status": "playable-generated"
+    },
+    {
+      "id": "2-4",
+      "chapter": 2,
+      "title": "Viel zu spät",
+      "status": "playable-generated"
+    },
+    {
+      "id": "3-1",
+      "chapter": 3,
+      "title": "Bonjour la classe",
+      "status": "playable-generated"
+    },
+    {
+      "id": "3-2",
+      "chapter": 3,
+      "title": "Zugriff verweigert",
+      "status": "playable-generated"
+    },
+    {
+      "id": "3-3",
+      "chapter": 3,
+      "title": "Unbekannte Variable",
+      "status": "playable-generated"
+    },
+    {
+      "id": "3-4",
+      "chapter": 3,
+      "title": "Vom Thema abgeschweift",
+      "status": "playable-generated"
+    },
+    {
+      "id": "4-1",
+      "chapter": 4,
+      "title": "Ihr dürft hier nicht hoch",
+      "status": "playable-generated"
+    },
+    {
+      "id": "4-2",
+      "chapter": 4,
+      "title": "Toiletten-Notstand",
+      "status": "playable-generated"
+    },
+    {
+      "id": "4-3",
+      "chapter": 4,
+      "title": "Unbezahlbares Mittagessen",
+      "status": "playable-generated"
+    },
+    {
+      "id": "4-4",
+      "chapter": 4,
+      "title": "Gib sofort das Handy her!",
+      "status": "playable-generated"
+    },
+    {
+      "id": "5-1",
+      "chapter": 5,
+      "title": "Deo-Apokalypse",
+      "status": "playable-generated"
+    },
+    {
+      "id": "5-2",
+      "chapter": 5,
+      "title": "Hundert Kilometer pro Stunde",
+      "status": "playable-generated"
+    },
+    {
+      "id": "5-3",
+      "chapter": 5,
+      "title": "Der Geräteraum",
+      "status": "playable-generated"
+    },
+    {
+      "id": "5-4",
+      "chapter": 5,
+      "title": "Der Speerwerfer",
+      "status": "playable-generated"
+    },
+    {
+      "id": "6-1",
+      "chapter": 6,
+      "title": "Ruhe in der Bibliothek",
+      "status": "playable-generated"
+    },
+    {
+      "id": "6-2",
+      "chapter": 6,
+      "title": "Das Sekretariat",
+      "status": "playable-generated"
+    },
+    {
+      "id": "6-3",
+      "chapter": 6,
+      "title": "Der Kopierraum",
+      "status": "playable-generated"
+    },
+    {
+      "id": "6-4",
+      "chapter": 6,
+      "title": "Koffein-Katastrophe",
+      "status": "playable-generated"
+    },
+    {
+      "id": "7-1",
+      "chapter": 7,
+      "title": "Technik-Team",
+      "status": "playable-generated"
+    },
+    {
+      "id": "7-2",
+      "chapter": 7,
+      "title": "Der Schulkeller",
+      "status": "playable-generated"
+    },
+    {
+      "id": "7-3",
+      "chapter": 7,
+      "title": "Der Vortrag ohne Ende",
+      "status": "playable-generated"
+    },
+    {
+      "id": "7-4",
+      "chapter": 7,
+      "title": "Das Herz der Regeln",
+      "status": "playable-generated"
+    },
+    {
+      "id": "8-1",
+      "chapter": 8,
+      "title": "Der letzte Schultag",
+      "status": "playable-generated"
+    },
+    {
+      "id": "8-2",
+      "chapter": 8,
+      "title": "Die perfekte Schulversammlung",
+      "status": "playable-generated"
+    },
+    {
+      "id": "8-3",
+      "chapter": 8,
+      "title": "Das Direktorat",
+      "status": "playable-generated"
+    },
+    {
+      "id": "8-4",
+      "chapter": 8,
+      "title": "Final Period",
+      "status": "playable-generated"
+    }
+  ],
+  "weapons": [
+    "paperBall",
+    "paperPlane",
+    "eraser",
+    "chalk",
+    "rubberBand",
+    "waterBottle",
+    "glueStick",
+    "inkEraser"
+  ],
+  "abilities": [
+    "jump",
+    "sprint",
+    "aim",
+    "doubleJump",
+    "wallJump",
+    "slide",
+    "rope",
+    "dash",
+    "bounce",
+    "groundPound"
+  ],
+  "achievements": 50,
+  "dailyWeeks": 8,
+  "serviceAdapters": [
+    "rewardedAds",
+    "iap",
+    "leaderboards",
+    "friends",
+    "analytics",
+    "serverTime"
+  ]
+}
