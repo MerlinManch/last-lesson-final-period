@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.9.1 – Art-Redesign
+
+- vollständiges visuelles Redesign aller Level mit thematischen Schul-Umgebungen und Parallax-Tiefe
+- neue Plattformmaterialien, Umgebungsobjekte, Sammelobjekte, Checkpoints und Ausgangstüren
+- animierte Spielerfigur mit Gesicht, Haaren, Kleidung, Rucksack und Bewegungsposen
+- sechs unterscheidbare Gegnertyp-Silhouetten sowie ein neu gezeichneter Boss
+- Charaktervorschau mit ausdrucksstärkerem Design und Animation
+- Offline-Cache aktualisiert, damit das Redesign auf installierten Web-Apps geladen wird
+
 ## 0.9.0 – Browser-Beta
 
 - vollständige statische Webprojektstruktur angelegt
